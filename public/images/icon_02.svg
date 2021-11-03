@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="852px" height="652px" viewBox="0 0 852 652" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icons_02</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons_02">
+            <g id="Group-3" transform="translate(82.000000, 83.000000)">
+                <rect id="Rectangle-6" fill="#EEA1BE" x="0" y="0" width="344" height="81" rx="14"></rect>
+                <rect id="Rectangle-6" fill="#EEA1BE" x="0" y="414" width="344" height="81" rx="14"></rect>
+                <rect id="Rectangle" fill="#A1CFEE" x="414" y="208" width="298" height="287" rx="14"></rect>
+                <rect id="Rectangle-6" fill="#A1CFEE" x="0" y="138" width="344" height="81" rx="14"></rect>
+                <rect id="Rectangle-6" fill="#A1CFEE" x="0" y="276" width="344" height="81" rx="14"></rect>
+                <g id="Group-2" transform="translate(132.000000, 0.000000)">
+                    <path d="M95.1400069,315.094941 C117.432839,324.375281 138.104096,320.918792 157.153778,304.725473 C185.7283,280.435496 188.432684,268.222718 198.594767,220.908484 C208.756849,173.594251 204.322257,150.917753 224.995993,120.407115 C245.669729,89.8964768 355.9779,71.3377854 290.486946,85.2925003" id="Path-3" stroke="#FFFFFF" stroke-width="45"></path>
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="45" cx="52" cy="317" r="52"></circle>
+                    <g id="Group" transform="translate(350.000000, 0.000000)" fill="#FFFFFF">
+                        <rect id="Rectangle-2" transform="translate(80.300406, 80.300406) rotate(45.000000) translate(-80.300406, -80.300406) " x="-14.7615171" y="61.8004057" width="190.123846" height="37" rx="14"></rect>
+                        <rect id="Rectangle-2" transform="translate(80.300406, 80.573252) scale(-1, 1) rotate(45.000000) translate(-80.300406, -80.573252) " x="-14.7615171" y="62.0732525" width="190.123846" height="37" rx="14"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <path d="" id="Path-2" stroke="#979797"></path>
+    </g>
+</svg>
