@@ -36,8 +36,8 @@ export default function socialMedia() {
                         </CasestudyContent>
                         <CasestudyContent>
                             <SubTitle>Link</SubTitle>
-                            <LinkWrapper href="moshtech.netlify.app" target="_blank">
-                                <LinkInfo href="viroglyph.netlify.app" target="_blank">Website</LinkInfo>
+                            <LinkWrapper href="viroglyph.epizy.com" target="_blank">
+                                <LinkInfo>Website</LinkInfo>
                                 <RiExternalLinkFill />
                             </LinkWrapper>
                         </CasestudyContent>

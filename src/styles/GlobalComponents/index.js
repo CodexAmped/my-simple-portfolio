@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const Group = styled.div`
+  flex: 1;
+  padding: ${(props) => props.nopadding ? "0" : "5px" } ;
+  margin: 0 auto;
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 4px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "2px" } ;
+  }
+`;
 export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
@@ -23,7 +35,37 @@ export const Section = styled.section`
     flex-direction: column;
   }
 `
+export const OutlineTitle = styled.h2`
+font-weight: 800;
+font-size: ${(props) => props.main ? '65px' : '56px'};
+line-height: ${(props) => props.main ? '72px' : '56px'};
+width: max-content;
+max-width: 100%;
+-webkit-text-stroke: 1px #ccc;
+-webkit-font-smoothing: antialiased;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 10px;
+margin-top: 10px;
+padding: ${(props) => props.main ? '38px 0 16px' : '0'};
 
+@media ${props => props.theme.breakpoints.md}{
+  font-size: ${(props) => props.main ? '56px' : '48px'};
+  line-height: ${(props) => props.main ? '56px' : '48px'};
+  margin-bottom: 12px;
+  padding: ${(props) => props.main ? '40px 0 12px' : '0'};
+}
+
+@media ${props => props.theme.breakpoints.sm}{
+  font-size: 32px;
+  line-height: 40px;
+  font-size: ${(props) => props.main ? '28px' : '32px'};
+  line-height: ${(props) => props.main ? '32px' : '40px'};
+  margin-bottom: 8px;
+  padding: ${(props) => props.main ? '16px 0 8px' : '0'};
+  max-width: 100%;
+}
+`;
 export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
@@ -52,8 +94,7 @@ export const SectionTitle = styled.h2`
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
     max-width: 100%;
   }
-`
-
+`;
 export const SectionText = styled.p`
   max-width: 800px;
   font-size: 22px;
@@ -75,7 +116,7 @@ export const SectionText = styled.p`
     padding-bottom: 16px;
   }
 `
-export const BioName = styled.span`
+export const AboutTag = styled.span`
   font-size: 16px;
   font-weight: 600;
   color:  #9652d1;
