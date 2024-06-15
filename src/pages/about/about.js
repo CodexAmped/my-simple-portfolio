@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { Section, OutlineTitle, SectionText, SectionTitle, AboutTag, Group, SpaceDivider } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, OutlineTitle, SectionText, SectionTitle, AboutTag, Group, SpaceDivider } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, AboutIntro, IntroTitleText, IntroText, ProfileImg, AboutServices, ContentServices, Resume, ContentHeader, ContentText, ContentList, ContentListItem, ContentListItemParagraph, ResumeLink, PastExperienceHead, ProcessList, ProcessListItem, ProcessListItemNumber } from '../../components/Hero/HeroStyles';
-import { Img } from '../../components/Projects/ProjectsStyles';
+import { Img, CardInfo, LinkWrapper, ExternalLinks } from '../../components/Projects/ProjectsStyles';
 import { Layout } from '../../layout/Layout';
 import { FcViewDetails } from "react-icons/fc";
+import Projects from '../../components/other/Projects';
 
 const About = (props) => (
   <Layout>
@@ -19,7 +20,7 @@ const About = (props) => (
         </SectionTitle>
         <AboutIntro>
           <Group>
-            <IntroTitleText>I'm Gert Mafatle, a freelance Web Developer/UI -UX Designer currently living in Johanessburg, South Africa</IntroTitleText>
+            <IntroTitleText>I'm Motlatsi Gert Mafatle, a freelance Web Developer/Software Engineer currently living in Cape Town, South Africa</IntroTitleText>
             <IntroText>
               My experience comes from working with different people to solve problems on various projects and help them ship designs and developments, alpha products or new features.
               One of my goals during the project development, is to make sure that we are always on the same page by documenting and communicating about the journey.
@@ -78,7 +79,10 @@ const About = (props) => (
       </LeftSection>
     </Section>
     <Section>
-      <SectionTitle>Values & Process</SectionTitle>
+      <SectionDivider />
+      <SpaceDivider>
+        <SectionTitle main center>Values & Process</SectionTitle>
+      </SpaceDivider> 
       <SpaceDivider>
         <IntroTitleText>Using the right tools with well structured process leads to the collaboration's success.</IntroTitleText>
       </SpaceDivider>
@@ -94,24 +98,52 @@ const About = (props) => (
           <ProcessListItemNumber>2.</ProcessListItemNumber>
           <IntroTitleText>Prototype</IntroTitleText>
           <IntroText>
-              Gathering information about your product and goals. Reseaching your industry and competitors.
+             Turning your research into solutions that will meet your goals and will be efficient for your users.
             </IntroText>
         </ProcessListItem>
         <ProcessListItem>
           <ProcessListItemNumber>3.</ProcessListItemNumber>
           <IntroTitleText>Design</IntroTitleText>
           <IntroText>
-              Gathering information about your product and goals. Reseaching your industry and competitors.
+              Combining the forms and functions to make sure your users have delightful experience.
             </IntroText>
         </ProcessListItem>
         <ProcessListItem>
           <ProcessListItemNumber>4.</ProcessListItemNumber>
           <IntroTitleText>Build</IntroTitleText>
           <IntroText>
-              Gathering information about your product and goals. Reseaching your industry and competitors.
+              Following the development to make sure that nothing was left on the side.
             </IntroText>
         </ProcessListItem>
       </ProcessList>
+    </Section>
+    <Section>
+      <SectionDivider />
+      <SpaceDivider>
+        <SectionTitle main center>Playground & Exploration</SectionTitle>
+      </SpaceDivider>
+        <IntroTitleText>Driven by love of exploring new knowladge around development, design and more</IntroTitleText>
+      <IntroText>
+        Collecting visual inspirations, creating CLEAN and SECURE code, learning new things and building projects are what filling my daily life.
+      </IntroText>
+      <br />
+      <IntroText>
+        Through developing various projects, I have tried to understand my learning process and by doing so it allowed me to be able to assemble projects meticulously with Agile workflow.
+        I have shared some of my work on <ExternalLinks  href="http://github.com/codexamped" target="_blank">Github</ExternalLinks>
+      </IntroText>
+      <SpaceDivider>
+        <Projects />
+      </SpaceDivider>
+    </Section>
+    <Section>
+      <OutlineTitle main>
+        Interested?<br />
+        Lets get in touch!
+      </OutlineTitle>
+      <IntroText>
+        I'm open to freelance opportunities or remote position. Feel free to reach out if you need hand <br />
+        on your side or open source project. I'd love to help.
+      </IntroText>
     </Section>
   </Layout> 
 

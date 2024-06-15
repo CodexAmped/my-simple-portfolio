@@ -10,7 +10,7 @@ const Hero = (props) => (
     <LeftSection>
       <AboutTag>I'm Gert Mafatle</AboutTag>
       <SectionTitle main center>
-        I'm a Web Developer<br />
+        I'm a Software Developer<br />
         Turning Your Idea Into Reality
       </SectionTitle>
       <SectionText>

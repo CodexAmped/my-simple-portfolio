@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { AboutIntro, IntroText, AboutServices, ContentServices, ContentHeader, ContentText, } from '../Hero/HeroStyles';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, Email, EmailAddress, Icon } from './TimeLineStyles';
+import { Section, SectionDivider, SectionText, SectionTitle, OutlineTitle, Group } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import { BiEnvelope } from "react-icons/bi";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -41,7 +43,25 @@ const Timeline = () => {
 
     window.addEventListener('resize', handleResize);
   }, []);
-
+  const copyText = () => {
+    var copyText = "gertmafatle95@gmail.com";
+    var text = document.getElementById("myText");
+  
+    // copyText.select();
+    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    navigator.clipboard.writeText(copyText);
+  
+    text.value = "Copied!";
+  }
+  const handleHover = () => {
+    var text = document.getElementById("myText");
+    text.value = "Click to copy!";
+  }
+  const handleHoverLeave = () => {
+    var text = document.getElementById("myText");
+    text.value = "gertmafatle95@gmail.com";
+  }
   return (
     <Section>
       <SectionTitle id="about">About Me</SectionTitle>
@@ -110,6 +130,36 @@ const Timeline = () => {
             </CarouselButton>
           ))}
       </CarouselButtons>
+      <SectionTitle main>Services & Contact</SectionTitle>
+      <AboutIntro>
+        <Group sidemargin>
+          <AboutServices>
+            <ContentServices>
+              <ContentHeader>I'm building digital experience and interface</ContentHeader>
+              <ContentText>
+                I build my projects with concise detail and responsiveness in mind. My mission is to keep the viewers on your page and increase the turnover
+                by finding exactly what is it that appeals to them.
+              </ContentText>
+            </ContentServices>
+          </AboutServices>
+        </Group>
+        <Group sidemargin>
+          <OutlineTitle main>
+            Interested?<br />
+            Lets get in touch!
+          </OutlineTitle>
+          <IntroText>
+            I'm open to freelance opportunities or remote position. Feel free to reach out if you need hand
+            on your side or open source project. I'd love to help.
+          </IntroText>
+          <Email onClick={copyText} onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
+            <Icon>
+              <BiEnvelope />
+            </Icon>
+            <EmailAddress type="text" value="gertmafatle95@gmail.com" id="myText" disabled/>
+          </Email>
+        </Group>
+      </AboutIntro>
     </Section>
   );
 };

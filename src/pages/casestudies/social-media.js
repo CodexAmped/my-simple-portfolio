@@ -32,11 +32,11 @@ export default function socialMedia() {
                         </CasestudyContent>
                         <CasestudyContent sideborder>
                             <SubTitle>Year</SubTitle>
-                            <InfoSpan>2018</InfoSpan>
+                            <InfoSpan>2021</InfoSpan>
                         </CasestudyContent>
                         <CasestudyContent>
                             <SubTitle>Link</SubTitle>
-                            <LinkWrapper href="viroglyph.epizy.com" target="_blank">
+                            <LinkWrapper href="http://viroglyph.rf.gd/" target="_blank">
                                 <LinkInfo>Website</LinkInfo>
                                 <RiExternalLinkFill />
                             </LinkWrapper>
@@ -91,6 +91,17 @@ export default function socialMedia() {
                         </Context>
                     </ContextContainer> 
                 </ExtraContent>
+            </Section>
+            <Section>
+                <SectionTitle main>Getting the right content</SectionTitle>
+                <SpaceDivider>
+                    <CardInfo>
+                        When I started working on new implementation and design, I tried to understand what was wrong and missing previously. I decided to work from scratch on the content. I worked to inventory all the content,
+                        writing the stregnth of the solution on post-it note. I then did a quick hierarchy between the page to see if all the main layout was is in the right place and tried to create to create the beginning of explaining what
+                        the site was all about.
+                    </CardInfo> 
+                </SpaceDivider>
+                <Img large src="/images/content-sd.svg" />
             </Section>
         </Layout>
       );

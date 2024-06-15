@@ -1,6 +1,46 @@
 
 import styled from 'styled-components'
 
+export const EmailAddress = styled.input`
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+`;
+export const Email = styled.div`
+  margin-top: 30px;
+  border: 1px solid rgb(135 126 126 / 50%);
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: background-color 200ms, border 200ms;
+  cursor: pointer;
+  &:hover {
+    & ${EmailAddress}:nth-child(2){
+      color: #000;
+    }
+    background: rgb(227 152 162);
+    color: #000;
+    border: 1px solid rgb(227 152 162);
+  }
+`;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100px;
+  border-right: 1px solid rgb(135 126 126 / 50%);
+`;
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
   background: #0F1624;

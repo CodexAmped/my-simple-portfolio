@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Group = styled.div`
   flex: 1;
   padding: ${(props) => props.nopadding ? "0" : "5px" } ;
-  margin: 0 auto;
+  margin: ${(props) => props.sidemargin ? "0 0.5rem" : "0 auto" };
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 4px;
   }
@@ -37,11 +37,11 @@ export const Section = styled.section`
 `
 export const OutlineTitle = styled.h2`
 font-weight: 800;
-font-size: ${(props) => props.main ? '65px' : '56px'};
+font-size: ${(props) => props.main ? '70px' : '66px'};
 line-height: ${(props) => props.main ? '72px' : '56px'};
 width: max-content;
 max-width: 100%;
--webkit-text-stroke: 1px #ccc;
+-webkit-text-stroke: 0.1rem #ccc;
 -webkit-font-smoothing: antialiased;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;

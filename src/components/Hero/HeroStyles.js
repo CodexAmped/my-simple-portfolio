@@ -60,13 +60,14 @@ export const IntroTitleText = styled.h4`
 
   @media ${props => props.theme.breakpoints.md} {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 30px;
     margin-bottom: 4px;
   }
 
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
+
   }
 `;
 export const IntroText = styled.p`
@@ -77,14 +78,16 @@ export const IntroText = styled.p`
   padding-right: 16px;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 12px;
     line-height: 18px;
     padding-right: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 10px;
     line-height: 16px;
+    margin-top: 20px;
     padding-right: 0;
+    margin-bottom: 20px;
   }
 `;
 export const ProfileImg = styled.div`
@@ -150,12 +153,10 @@ export const ContentText = styled.p`
   margin: 40px 0;
 
   @media ${props => props.theme.breakpoints.md} {
-    font-size: 12px;
     line-height: 18px;
     padding-right: 32px;
   }
   @media ${props => props.theme.breakpoints.sm} {
-    font-size: 10px;
     line-height: 16px;
     padding-right: 0;
   }
@@ -186,6 +187,9 @@ export const  ContentList = styled.ul`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     justify-content: center;
+    & ${ContentListItem}:nth-child(2){
+      margin-top: 40px;
+    }
   }
 `;
 export const ContentListItemParagraph = styled.p`

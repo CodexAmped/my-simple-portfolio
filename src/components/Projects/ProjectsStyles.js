@@ -199,16 +199,15 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.02em;
 transition: 0.5s;
-&:hover{
-  background: #801414;
-
-}
+cursor: pointer;
+color: rgba(255, 255, 255, 0.5);
+  &:hover {
+    color: #9cc9e3;
+  }
 `;
 
 export const TagList = styled.ul`
@@ -217,6 +216,6 @@ justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
+color: #9790b9;
 font-size: 1.5rem;
 `
