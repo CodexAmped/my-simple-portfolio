@@ -101,7 +101,7 @@ export default function socialMedia() {
                         the site was all about.
                     </CardInfo> 
                 </SpaceDivider>
-                <Img large src="/images/content-sd.svg" />
+                <Img large src="/images/content-svg.svg" />
             </Section>
         </Layout>
       );
